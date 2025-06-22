@@ -65,24 +65,18 @@ pip install numpy pandas matplotlib statsmodels scipy
 
 - **Top-K Acceptance Rate (K=3)**:
   Percentage of accepted jobs ranked in the top 3 positions.
-    $$
-    \text{Top-}K\ \text{Acceptance Rate} = \frac{\#\ \text{of accepts within top } K\ \text{positions}}{\#\ \text{of total accepts}}
-    $$
+  - **Formula**: Top-K Acceptance Rate = (Number of accepts within top K positions) / (Total number of accepts)
   - **Goal**: Increase.
 
 ### Guardrail Metrics
 
 - **Overall Acceptance Rate**:\
   Proportion of job requests accepted.
-  $$
-  \text{Overall Acceptance Rate} = \frac{\text{\# accepted job requests}}{\text{total \# job requests}}
-  $$
+  - **Formula**: Overall Acceptance Rate = (Number of accepted job requests) / (Total number of job requests)
   - **Goal**: Stay stable or improve.
 - **Time to Accept (Median & 90th Percentile)**:\
   Time from list display to acceptance.
-  $$
-  \text{Time to Accept} = \text{timestamp}_{accept} - \text{timestamp}_{list\_shown}
-  $$
+  - **Formula**: Time to Accept = Timestamp of acceptance - Timestamp when list was shown
   - **Goal**: Lower or unchanged.
 
 ### Informative Metrics
@@ -90,9 +84,7 @@ pip install numpy pandas matplotlib statsmodels scipy
 - **Median Position of Accepted Job Requests**:
   - **Goal**: Lower.
 - **Acceptance Rate at Selected Order**:
-  $$
-  \text{Acceptance Rate}_i = \frac{\text{\# of accepts at position } i}{\text{Total \# of accepts}}
-  $$
+  - **Formula**: Acceptance Rate at position i = (Number of accepts at position i) / (Total number of accepts)
   - **Goal**: Higher in top ranks.
 
 ## Hypothesis

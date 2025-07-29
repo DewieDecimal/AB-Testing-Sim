@@ -56,8 +56,8 @@ pip install numpy pandas matplotlib statsmodels scipy
   - **Treatment (B)**: New ranking algorithm.
 - **Triggering**: Suppliers are randomly assigned to Control or Treatment upon viewing the job list.
 - **Run-Time**:
-  - Duration: 18 days.
-  - Sample Size: 50 eligible suppliers per group per day (879 total per group). Eligibility requires viewing at least 5 job requests per session.
+  - Duration: 22 days.
+  - Sample Size: 50 eligible suppliers per group per day (1056 total per group). Eligibility requires viewing at least 5 job requests per session.
 
 ## Metrics
 
@@ -102,7 +102,7 @@ Synthetic data is generated for suppliers in both groups:
 ## Simulation Code
 
 - Executed in the `ab-testing-simulation.ipynb` notebook.
-- Simulates 879 suppliers per group.
+- Simulates 1056 suppliers per group.
 - Data stored in a pandas DataFrame for analysis.
 
 ## Results and Analysis
